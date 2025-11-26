@@ -1,0 +1,10 @@
+# IdeaSpot.ai Daily Cron Jobs
+# Add this to your crontab using: crontab -e
+
+# Generate fresh startup ideas every day at 6:00 AM UTC
+0 6 * * * /app/scripts/generate_daily_ideas.sh
+
+# Optional: Generate ideas every 4 hours for testing (remove in production)
+# 0 */4 * * * /app/scripts/generate_daily_ideas.sh
+
+# View logs: tail -f /app/logs/ai_generation.log
